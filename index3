@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WX Travel</title>
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<header>
+    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+    <logo>
+        <svg width="40" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.71 47.85">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: #fff;
+                        stroke: #00949f;
+                        stroke-miterlimit: 5;
+                    }
+                    body {
+                        background-color: lightcyan;
+                        font-family: verdana;
+                        margin: 0;
+                    }
+                    
+                    header {
+                        background-color: lightblue;
+                        background-size: 100%;
+                        font-family: verdana;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px;
+                    }
+                    
+                    logo {
+                        text-align: left;
+                        position: fixed;
+                    }
+                    
+                    nav {
+                        background-color: lightblue;
+                        background-size: 100%;
+                        font-size: 20px;
+                        text-align: right;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                    }
+                    
+                    nav a {
+                        text-decoration: none;
+                        color: white;
+                        padding: 10px 20px;
+                        display: inline-block;
+                    }
+                    
+                    /* Hamburger styles */
+                    .nav-toggle {
+                        display: none;
+                    }
+                    
+                    .nav-toggle-label {
+                        font-size: 24px;
+                        cursor: pointer;
+                    }
+                    
+                    /* Media query for smaller screens */
+                    @media only screen and (max-width: 768px) {
+                        nav {
+                            display: none;
+                            flex-direction: column;
+                            position: absolute;
+                            top: 80px;
+                            left: 0;
+                            width: 100%;
+                            background-color: lightblue;
+                        }
+                    
+                        nav a {
+                            text-align: center;
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding: 15px;
+                        }
+                    
+                        .nav-toggle {
+                            display: block;
+                            position: fixed;
+                            top: 20px;
+                            right: 20px;
+                        }
+                    
+                        .nav-toggle:checked + header nav {
+                            display: flex;
+                        }
+                    }
+                    
+                    video {
+                        width: 100%;
+                        height: auto;
+                    }
+                    
+                    .row {
+                        margin: 0;
+                        padding: 5px;
+                        background-color: lightblue;
+                        text-align: center;
+                    }
+                    
+                    .row > h1,
+                    .deal {
+                        margin: 10px;
+                        padding: 5px;
+                        font-family: verdana;
+                    }
+                    
+                    .column {
+                        flex: 1;
+                        max-width: 300px;
+                        margin: 20px;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    .column img{
+                        width: 100;
+                        height: auto;
+                        max-height: 200px;
+                        border-radius: 6px
+                    }
+                    
+                    .column > h1,
+                    p {
+                        margin: 4px;
+                        font-size: 80%;
+                        font-family: verdana;
+                    }
+                    
+                    footer {
+                        background-color: lightblue;
+                        text-align: center;
+                        font-family: verdana;
+                    }
+                    #background-video {
+                        display: none;
+                    }
+                
+                    .fallback-image {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                    @media only screen and (max-width: 768px){
+                        .column{
+                            flex: 100;
+                            max-width: none;
+                        }
+                    }
+                </style>
+            </defs>
+            <rect class="cls-1" x=".5" y="8.22" width="26.71" height="35.46" rx="3.21" ry="3.21" />
+            <rect class="cls-1" x="6.21" y=".5" width="15.29" height="1.99" />
+            <rect class="cls-1" x="6.99" y="4.08" width="5.43" height="2.25" transform="translate(14.9 -4.5) rotate(90)" />
+            <rect class="cls-1" x="15.09" y="4.23" width="5.43" height="2.25" transform="translate(23.16 -12.45) rotate(90)" />
+            <circle class="cls-1" cx="3.64" cy="45.52" r="1.83" />
+            <circle class="cls-1" cx="24.47" cy="45.52" r="1.83" />
+            <rect class="cls-1" x="3.64" y="15.56" width=".84" height="11.01" transform="translate(-3.77 1.09) rotate(-10.5)" />
+            <rect class="cls-1" x="6.36" y="18.35" width=".85" height="7.98" transform="translate(8.24 -.96) rotate(20.47)" />
+            <rect class="cls-1" x="9.28" y="18.12" width=".85" height="7.98" transform="translate(-7.8 5.47) rotate(-22.76)" />
+            <rect class="cls-1" x="12.73" y="15.41" width=".84" height="11.01" transform="translate(6.3 -2.82) rotate(16.07)" />
+            <rect class="cls-1" x="18.08" y="25.71" width="1.02" height="13.29" transform="translate(24.21 -4.53) rotate(38.54)" />
+            <rect class="cls-1" x="18.42" y="25.71" width="1.02" height="13.29" transform="translate(-16.47 20.01) rotate(-40.45)" />
+            <rect class="cls-1" x="7.63" y="17.75" width=".95" height=".95" transform="translate(26.33 10.12) rotate(90)" />
+        </svg>
+    </logo>
+    <nav>
+        <a href="#index">Home</a>
+        <a href="#packagetsssours">Package Tours</a>
+        <a href="#rs">Rediscover Singapore</a>
+        <a href="#cruises">Cruises</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<video id="background videoo" width="100%" autoplay loop muted>
+    <source src="greece.mp4">
+</video>
+
+<div class="row">
+    <h1>December Deals</h1>
+    <div class="column">
+        <img src="bali.jpg" alt="deal1">
+        <h1>Tropical Retreat in Bali!</h1>
+        <p>Escape the winter blues with a 6-day getaway to Bali for only $799! Enjoy the sun-kissed beaches, explore ancient temples, and indulge in local cuisine. Package includes accommodation, airport transfers, and a guided island tour. Limited spots available, book now!</p>
+    </div>
+    <div class="column">
+        <img src="nyc.jpg" alt="deal2">
+        <h1>New York City Holiday Experience</h1>
+        <p>Dive into the festive vibe of NYC with a 4-day trip at just $599! Visit iconic landmarks, enjoy Broadway shows, and ice skate in Central Park. Package includes hotel stay, city tour, and tickets to a popular show. Don't miss this unforgettable holiday adventure!</p>
+    </div>
+    <div class="column">
+        <img src="cmc.jpg" alt="deal3">
+        <h1>Romantic Christmas Market Cruise</h1>
+        <p>Sail through Europe's enchanting Christmas markets on a 7-day cruise for $1299 per person! Experience the magic of cities like Cologne and Strasbourg. Cruise includes accommodation, gourmet meals, and guided market tours. Limited cabins left, secure your spot today!</p>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright © WX</p>
+    <p>All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
